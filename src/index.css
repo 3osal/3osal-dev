@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #131313;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  transition: 0.1s linear;
+  scroll-behavior: smooth;
+}
+
+.main-title {
+  display: block;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 0 auto;
+  color: #fc2947;
+  max-width: max-content;
+  font-family: "Kalam", cursive;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  margin-top: 100px;
+  padding: 50px 0;
+}
+
+p {
+  color: #747373;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #dde6ed;
+}
+
+li {
+  list-style: none;
+}
