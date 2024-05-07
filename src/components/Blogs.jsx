@@ -1,29 +1,25 @@
 import project from "../assets/image/blogs/project.png";
 import finish from "../assets/image/blogs/finish.png";
 import team from "../assets/image/blogs/team.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+
+import { FaCalendar } from "react-icons/fa";
 export default function Blogs() {
   return (
-    <section>
+    <section id="blogs">
       <div className="container">
         <span className="main-title">our blogs</span>
-        <div className="blogs mt-16 grid grid-rows-1 lg:grid-cols-3 gap-5">
+        <div className="mt-16 grid grid-rows-1 lg:grid-cols-3 gap-5">
           <div className="card rounded-[7px]">
             <div className="image w-[100%]">
               <img src={finish} alt="device" className="rounded-[0px]" />
             </div>
             <div className="info px-5 py-2">
-              <div className="data-time text-white mb-4">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCalendar}
-                    className="mr-2 hover:text-main-color"
-                  />
+              <div className="data-time text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center gap-3">
+                  <FaCalendar className="hover:text-main-color" />
                   4/7/2024
                 </span>
                 <span className="text-[14px] capitalize text-slate-600">
-                  {" "}
                   | admin
                 </span>
               </div>
@@ -47,16 +43,12 @@ export default function Blogs() {
               <img src={project} alt="device" className="rounded-[0px]" />
             </div>
             <div className="info px-5 py-2">
-              <div className="data-time text-white mb-4">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCalendar}
-                    className="mr-2 hover:text-main-color"
-                  />
+              <div className="data-time text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center gap-3">
+                  <FaCalendar className="hover:text-main-color" />
                   4/7/2024
                 </span>
                 <span className="text-[14px] capitalize text-slate-600">
-                  {" "}
                   | admin
                 </span>
               </div>
@@ -80,16 +72,12 @@ export default function Blogs() {
               <img src={team} alt="device" className="rounded-[0px]" />
             </div>
             <div className="info px-5 py-2">
-              <div className="data-time text-white mb-4">
-                <span>
-                  <FontAwesomeIcon
-                    icon={faCalendar}
-                    className="mr-2 hover:text-main-color"
-                  />
+              <div className="data-time text-white mb-4 flex items-center gap-3">
+                <span className="flex items-center gap-3">
+                  <FaCalendar className="hover:text-main-color" />
                   4/7/2024
                 </span>
                 <span className="text-[14px] capitalize text-slate-600">
-                  {" "}
                   | admin
                 </span>
               </div>

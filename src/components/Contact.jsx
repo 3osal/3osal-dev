@@ -1,5 +1,5 @@
-import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
   return (
@@ -9,15 +9,15 @@ export default function Contact() {
             <div className="data mt-16 grid grid-rows-1 lg:grid-cols-2 gap-10 items-start">
                 <div className="left flex flex-col gap-5">
                     <div className="card flex gap-3 items-center bg-black w-[350px] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
-                        <FontAwesomeIcon icon={faEnvelope} className="text-[30px] text-main-color"/>
+                        <FaEnvelope className="text-[30px] text-main-color" />
                         <span className="block text-white">essammohamedabdelmaaboud22@gmail.com</span>
                     </div>
                     <div className="card flex gap-3 items-center bg-black w-[350px] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
-                        <FontAwesomeIcon icon={faPhone} className="text-[30px] text-main-color"/>
+                        <FaPhoneAlt className="text-[30px] text-main-color" /> 
                         <span className="block text-white">+20 101868446885</span>
                     </div>
                     <div className="card flex gap-3 items-center bg-black w-[350px] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
-                        <FontAwesomeIcon icon={faLocationDot} className="text-[30px] text-main-color"/>
+                        <FaLocationDot className="text-[30px] text-main-color" />
                         <span className="block text-white">AlAlexandria, Egypt</span>
                     </div>
                 </div>

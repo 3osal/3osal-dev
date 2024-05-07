@@ -1,23 +1,26 @@
-import About from "./components/About";
-import Blogs from "./components/Blogs";
-import ButtonUp from "./components/ButtonUp";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Landing from "./components/Landing";
+import './index.css';
 import Navbar from "./components/Navbar";
-import Works from "./components/Works";
-import "./index.css";
+import Landing from './components/Landing';
+import About from './components/About';
+import Works from './components/Works';
+import Blogs from './components/Blogs';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import ButtonUp from './components/ButtonUp';
+import QuickContact from './components/QuickContact';
+
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Landing />
       <About />
-      <ButtonUp />
       <Works />
       <Blogs />
       <Contact />
       <Footer />
+      <ButtonUp />
+      <QuickContact />
     </div>
   );
 }

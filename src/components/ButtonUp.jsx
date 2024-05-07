@@ -1,30 +1,29 @@
-import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { AiOutlineCaretUp } from "react-icons/ai";
 
 export default function ButtonUp() {
-  const [backToTopButton, setbackToTopButton] = useState(false);
+  const [BtnTop, setBtnTop] = useState(false);
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
-        setbackToTopButton(true);
+      if (window.scrollY > 300) {
+        setBtnTop(true);
       } else {
-        setbackToTopButton(false);
+        setBtnTop(false);
       }
     });
   });
-// Scroll up function
-  const scrollUp = ()=> {
+
+  const scrollUp = () => {
     window.scrollTo({
-        top : 0,
-        behavior : "smooth"
-    })
-  }
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return <>
-  {backToTopButton && (
-        <div onClick={scrollUp} className="fixed bottom-[10px] right-[15px] w-[50px] h-[50px] text-center bg-main-color p-[15px] rounded-[50%] cursor-pointer hover:bg-slate-800">
-        <FontAwesomeIcon icon={faCaretUp} className="text-white text-[23px]" />
-      </div>
-  )}
+  {BtnTop && <button onClick={scrollUp} className=" text-white  text-[25px] hover:bg-zinc-900 fixed bottom-5 right-5 p-3 rounded-[50px]">
+    <AiOutlineCaretUp />
+    </button>
+    }
   </>;
 }

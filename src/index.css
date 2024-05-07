@@ -3,39 +3,22 @@
 @tailwind utilities;
 
 body {
-  background-color: #131313;
-  font-family: "Inter", sans-serif;
+    background-color: #0C0C0C;
+    font-family: "Schibsted Grotesk", sans-serif;
 }
 
 * {
-  transition: 0.1s linear;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.main-title {
-  display: block;
-  font-size: 25px;
-  text-transform: capitalize;
-  margin: 0 auto;
-  color: #fc2947;
-  max-width: max-content;
-  font-family: "Kalam", cursive;
-  font-weight: bold;
+a {
+    text-decoration: none;
 }
 
-.container {
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section {
-  margin-top: 100px;
-  padding: 50px 0;
-}
-
-p {
-  color: #747373;
+li {
+    list-style: none;
 }
 
 h1,
@@ -47,6 +30,111 @@ h6 {
   color: #dde6ed;
 }
 
-li {
-  list-style: none;
+p {
+    color: #747373;
+  }
+
+.container {
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-title {
+    display: block;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    color: #fc2947;
+    max-width: max-content;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+  }
+
+section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: shadow .9s  infinite;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .5s;
+    animation: move 6s infinite;
+}
+
+.eye {
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    border-radius: 25px;
+    animation: blink 6s infinite;
+}
+
+@keyframes shadow {
+    50% {
+        box-shadow: -2px -1px 20px 0px #747373;
+    }
+
+    70% {
+        box-shadow: -2px -1px 10px 0px #747373;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0;
+    }
+}
+
+@keyframes move {
+    40% {
+        transform: translate(9px,10px);
+    }
+    60% {
+        transform: translate(9px,-10px);
+    }
+    80% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes blink {
+    0% {
+        height: 10px;
+        width: 10px;
+    }
+    15% {
+        height: 10px;
+        width: 15px;
+    }
+    20% {
+        height: 10px;
+        width: 15px;
+    }
+    60% {
+        height: 10px;
+        width: 15px;
+    }
+    100% {
+        height: 10px;
+        width: 10px;
+    }
 }
