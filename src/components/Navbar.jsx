@@ -54,7 +54,7 @@ export default function Navbar() {
             className={
               !Nav
                 ? "hidden"
-                : "flex flex-col gap-4 absolute right-3 top-14 bg-zinc-900 px-4 py-2 rounded-md"
+                : "flex flex-col gap-4 absolute right-3 top-14 bg-zinc-900 px-4 py-2 rounded-md z-20"
             }
           >
             <li className="text-white capitalize">home</li>
