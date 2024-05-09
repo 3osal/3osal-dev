@@ -57,11 +57,10 @@ export default function Navbar() {
                 : "flex flex-col gap-4 absolute right-3 top-14 bg-zinc-900 px-4 py-2 rounded-md z-20"
             }
           >
-            <li className="text-white capitalize">home</li>
-            <li className="text-white capitalize">about</li>
-            <li className="text-white capitalize">skills</li>
-            <li className="text-white capitalize">contact</li>
-            <li className="text-white capitalize">work</li>
+            <li className="text-white capitalize hover:text-main-color"><a href="#about">about</a></li>
+            <li className="text-white capitalize hover:text-main-color"><a href="#blogs">blogs</a></li>
+            <li className="text-white capitalize hover:text-main-color"><a href="#contact">contact</a></li>
+            <li className="text-white capitalize hover:text-main-color"><a href="#projects">work</a></li>
           </div>
         </div>
       </div>
