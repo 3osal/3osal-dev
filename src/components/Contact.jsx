@@ -8,15 +8,15 @@ export default function Contact() {
         <span className="main-title">quick contact</span>
             <div className="data mt-16 grid grid-rows-1 lg:grid-cols-2 gap-10 items-start">
                 <div className="left flex flex-col gap-5">
-                    <div className="card flex gap-3 items-center bg-black w-[350px] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
+                    <div className="card flex gap-3 items-center bg-black w-[100%] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
                         <FaEnvelope className="text-[30px] text-main-color" />
-                        <span className="block text-white">essammohamedabdelmaaboud22@gmail.com</span>
+                        <span className="block text-white">essammohamedabdelmaaboud22</span>
                     </div>
-                    <div className="card flex gap-3 items-center bg-black w-[350px] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
+                    <div className="card flex gap-3 items-center bg-black w-[100%] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
                         <FaPhoneAlt className="text-[30px] text-main-color" /> 
                         <span className="block text-white">+20 101868446885</span>
                     </div>
-                    <div className="card flex gap-3 items-center bg-black w-[350px] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
+                    <div className="card flex gap-3 items-center bg-black w-[100%] md:w-[100%] overflow-hidden px-[15px] py-[25px] rounded-[15px] hover:bg-gray-800">
                         <FaLocationDot className="text-[30px] text-main-color" />
                         <span className="block text-white">AlAlexandria, Egypt</span>
                     </div>
