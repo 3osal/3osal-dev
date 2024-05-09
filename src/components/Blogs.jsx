@@ -11,9 +11,9 @@ export default function Blogs() {
         <div className="mt-16 grid grid-rows-1 lg:grid-cols-3 gap-5">
           <div className="card rounded-[7px]">
             <div className="image w-[100%]">
-              <img src={finish} alt="device" className="rounded-[0px]" />
+              <img src={finish} alt="device" className="rounded-[0px] " />
             </div>
-            <div className="info px-5 py-2">
+            <div className="info py-2">
               <div className="data-time text-white mb-4 flex items-center gap-3">
                 <span className="flex items-center gap-3">
                   <FaCalendar className="hover:text-main-color" />
@@ -32,7 +32,7 @@ export default function Blogs() {
                 Illum ad magnam laboriosam numquam?
               </p>
             </div>
-            <div className="btn  bg-main-color px-[7px] py-[5px] rounded-md w-[max-content] block ml-5 hover:bg-slate-800">
+            <div className="btn bg-main-color px-[7px] py-[5px] rounded-md w-[max-content] block hover:bg-slate-800">
               <a href="/" className="text-white capitalize">
                 read more
               </a>
@@ -42,7 +42,7 @@ export default function Blogs() {
             <div className="image w-[100%]">
               <img src={project} alt="device" className="rounded-[0px]" />
             </div>
-            <div className="info px-5 py-2">
+            <div className="info py-2">
               <div className="data-time text-white mb-4 flex items-center gap-3">
                 <span className="flex items-center gap-3">
                   <FaCalendar className="hover:text-main-color" />
@@ -61,7 +61,7 @@ export default function Blogs() {
                 Illum ad magnam laboriosam numquam?
               </p>
             </div>
-            <div className="btn  bg-main-color px-[7px] py-[5px] rounded-md w-[max-content] block ml-5 hover:bg-slate-800">
+            <div className="btn bg-main-color px-[7px] py-[5px] rounded-md w-[max-content] block hover:bg-slate-800">
               <a href="/" className="text-white capitalize">
                 read more
               </a>
@@ -71,7 +71,7 @@ export default function Blogs() {
             <div className="image w-[100%]">
               <img src={team} alt="device" className="rounded-[0px]" />
             </div>
-            <div className="info px-5 py-2">
+            <div className="info py-2">
               <div className="data-time text-white mb-4 flex items-center gap-3">
                 <span className="flex items-center gap-3">
                   <FaCalendar className="hover:text-main-color" />
@@ -90,7 +90,7 @@ export default function Blogs() {
                 Illum ad magnam laboriosam numquam?
               </p>
             </div>
-            <div className="btn bg-main-color px-[7px] py-[5px] rounded-md w-[max-content] block ml-5 hover:bg-slate-800">
+            <div className="btn bg-main-color px-[7px] py-[5px] rounded-md w-[max-content] block hover:bg-slate-800">
               <a href="/" className="text-white capitalize">
                 read more
               </a>
